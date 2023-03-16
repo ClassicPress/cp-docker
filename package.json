@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A ClassicPress Docker Environment",
   "main": "bin/index.js",
+  "bin": {
+    "cpdocker": "bin/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ClassicPress/cp-docker.git"

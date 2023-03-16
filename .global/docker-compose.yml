@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  server:
+    image: classicpress/classicpress:nginx-php8.0
+    container_name: server
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ../.global:/srv/.global
+      - ../certificates:/srv/certificates
+      - ../config:/srv/config
+      - ../logs:/srv/logs
+      - ../provision/nginx:/app
+      - ../sites:/srv/www
+
+  mariadb:
+    image: classicpress/classicpress:mariadb
+    container_name: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    restart: always
+    ports:
+      - "3306:3306"
+    volumes:
+      - ../.global:/srv/.global
+      - ../config:/srv/config
+      - ../databases/data:/var/lib/mysql
+      - ../databases/sql:/srv/databases
+      - ../provision/mariadb:/app

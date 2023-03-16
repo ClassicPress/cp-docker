@@ -1,0 +1,20 @@
+# custom.yml
+#
+# This is the main YAML formatted file which is done in spaces and not tabs, and whitespace.
+# If you do not stick to the format. it will fail on provision.
+
+# Important Note
+#
+# If you need to add a new site, copy the example and uncomment the lines and enter the site name.
+# You wil then need to run when you use make.
+sites:
+  classicpress:
+    provision: false
+    repo: https://github.com/ClassicPress/cp-docker-sites.git
+    host:
+      - classicpress.test
+    type: ClassicPress
+
+options:
+  db_backups: true
+  db_restores: false
