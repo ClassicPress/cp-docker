@@ -26,7 +26,7 @@ const wsl_host = function() {
 				for ( const host of hosts ) {
 					if ( provision == true ) {
 						if ( host.endsWith( '.test' ) ) {
-							execSync( `sturdydocker-hosts remove ${host}` );
+							execSync( `cpdocker-hosts remove ${host}` );
 						}
 					}
 				}
@@ -39,7 +39,7 @@ const wsl_host = function() {
 				for ( const host of hosts ) {
 					if ( provision == true ) {
 						if ( host.endsWith( '.test' ) ) {
-							execSync( `sudo sturdydocker-hosts remove ${host}` );
+							execSync( `sudo cpdocker-hosts remove ${host}` );
 						}
 					}
 				}

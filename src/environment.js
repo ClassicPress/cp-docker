@@ -40,7 +40,7 @@ const restart = async function() {
 };
 
 const down = async function() {
-    execSync( `docker-compose -f ${getComposeFile} exec mariadb bash /srv/config/bin/db_backup.sh`, { stdio: 'inherit' } );
+    // execSync( `docker-compose -f ${getComposeFile} exec mariadb bash /srv/config/bin/db_backup.sh`, { stdio: 'inherit' } );
 	const delHost = require( './delHost' );
 	delHost.wsl_host();
     execSync( `docker-compose -f ${getComposeFile} down 2>/dev/null` );

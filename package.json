@@ -4,7 +4,8 @@
   "description": "A ClassicPress Docker Environment",
   "main": "bin/index.js",
   "bin": {
-    "cpdocker": "bin/index.js"
+    "cpdocker": "bin/index.js",
+    "cpdocker-hosts": "bin/hosts.js"
   },
   "repository": {
     "type": "git",
