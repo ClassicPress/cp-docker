@@ -1,0 +1,28 @@
+{
+  "name": "cp-docker",
+  "version": "1.0.0",
+  "description": "A ClassicPress Docker Environment",
+  "main": "bin/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClassicPress/cp-docker.git"
+  },
+  "keywords": [
+    "ClassicPress"
+  ],
+  "author": "Benjamin Lu",
+  "license": "GPL-2.0+",
+  "bugs": {
+    "url": "https://github.com/ClassicPress/cp-docker/issues"
+  },
+  "homepage": "https://github.com/ClassicPress/cp-docker#readme",
+  "dependencies": {
+    "fs-extra": "^11.1.0",
+    "is-wsl": "^2.2.0",
+    "js-yaml": "^4.1.0",
+    "minimist": "^1.2.8",
+    "once": "^1.4.0",
+    "replace-in-file": "^6.3.5",
+    "split": "^1.0.1"
+  }
+}
