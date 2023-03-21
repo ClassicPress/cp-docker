@@ -8,9 +8,7 @@ services:
       - "80:80"
     volumes:
       - ../.global:/srv/.global
-      - ../certificates:/srv/certificates
       - ../config:/srv/config
-      - ../logs:/srv/logs
       - ../provision/nginx:/app
       - ../sites:/srv/www
 
